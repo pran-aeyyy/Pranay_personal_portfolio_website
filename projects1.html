@@ -84,7 +84,24 @@
         margin: 20px;
         margin-top: 0px;
     }
+
+    img{
+        float: right;
+        max-width: 320px;
+        margin: 40px;
+    }
+    .wrapper{
+        width:70%;
+    }
+    .welcome h1{
+        color: rgb(255, 4, 4);
+    }
+
+    .wrapper h2{
+        color: rgb(13, 217, 236);
+    }
 </style>
+
 <body>
     <nav id="navbar">
         <div id="logo">
@@ -100,15 +117,14 @@
     </nav>
     
     <div class="welcome">
-        <div class="pic">
-            <img align="right" width="300" height="300" src="dermalens.png" alt="">
-        </div>
-        <h1 >Welcome to the Project Section of My Website </h1>
+        <h1 >Welcome to the Project Section of My Portfolio </h1>
         <p>
             This section consists of all the projects along with their brief description, which were created by me. The GitHub links for each code will be provided after each project. The code is open source and any-one can make changes in it.
         </p>
 <br>
-
+    <div class="text-box" >
+    <img align="float"  width="350" height="350" src="dermalens.png" alt="">
+        <div class="wrapper">
         <h2>
             1. DermaLens (A Decentralized Dermatology Diagnostics App with Image Recognition)
         </h2>
@@ -130,22 +146,71 @@
         <p>
             -- Doctor Collaboration: Users can opt to share their skin images and diagnostic results with healthcare professionals for remote consultations.
         </p>
+        </div>
+    </div>
 <br>
+<br>
+<br>
+<br>
+<div class="text-box" >
+    <img align="float"  width="350" height="350" src="met.jpg" alt="">
+    <div class="wrapper">
         <h2>
-            2. Uber-Data-Engineering (Python, Google Cloud Services, BigQuery)
+            2. Video Analytics Project by Maharashtra Metro Rail Corporation Limited
         </h2>
-        <p>
-            -- This is a data engineering project created to evaluate the performance metrics of a famous cab agency company Uber.
+        <p font-style = italic>
+            Tech Stack- Python, OpenCV, PyTorch, YoloV7, CNN Architectures, AWS, Docker  
         </p>
         <p>
-            -- The data was loaded on to Google Cloud Platform.
+            -- This is the project proposed by Maharashtra Metro Corportaion for using Pre-installed cameras at metro stations for Autonomous Surveilance.
         </p>
         <p>
-            -- In this project I got to work with GCS and understand how it works along with how clients interacts with it.
-        </p>
-        <p>
-            -- GitHub Link: <a href="">https://github.com/pran-aeyyy/Uber-Data-Engineering-Project.git</a>
-        </p>
+            -- We worked on two problem statements: 
+            <li>
+                Edge fall analytics : For edge fall analytics we had to monitor passenger movement near the platform edge in realtime and trigger an alarm in case of any accidents.
+            </li>
+            <br>
+            <li>
+                Ticketing queue analytics : We had to monitor the ticketing queues at the ticket counters and count the number of people. Using this we can track pattern of paasengers travelling from metro everyday.
+            </li>
+    </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="text-box">
+            <img align="float"  width="350" height="350" src="number.jpg" alt="">
+            <div class="wrapper">
+                <h2>
+                    3. Automatic License Plate recognition using Yolov7 and Raspberry Pi 4B
+                </h2>
+                <p >
+                    Tech Stack- Python, OpenCV, YoloV7, CNN Architectures, Roboflow, Computer Vision, Raspberry Pi 4B
+                </p>
+                <p>
+                    -- I chose to work on this project because i wanted to build a dataset of my own and build my model from scratch and train the model on my custom dataset.
+                </p>
+                <p>
+                    -- I built the entire dataset from scratch with Indian License plates. I collected around 600+ images and then augmented it which finally provided me with 1400+ images.
+                </p>
+                <p>
+                    -- Built the YoloV7 model from scratch. Split my dataset into 75% Training set, 15% validation set and 10% test set.
+                </p>
+                <p>
+                    -- The model was trained for 35 epochs and gave an accuracy of about 96%.
+                </p>
+                <a>
+                    Colab file- <a href="https://colab.research.google.com/drive/1ntLkSj6AK6_y0nAvD_y23bsOF1uBBXQi#scrollTo=6AGhNOSSHY4_">https://colab.research.google.com/drive/1ntLkSj6AK6_y0nAvD_y23bsOF1uBBXQi#scrollTo=6AGhNOSSHY4_</a> 
+                </p>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
